@@ -1,0 +1,9 @@
+sudo: required
+dist: trusty
+language: bash
+jobs:
+  include:
+    - stage: test
+      script: 
+      - sudo apt install apt-mirror -y
+      - sudo apt-mirror
