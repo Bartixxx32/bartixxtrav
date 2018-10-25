@@ -5,5 +5,6 @@ jobs:
   include:
     - stage: test
       script: 
+      - sudo apt update
       - sudo apt install apt-mirror -y
       - sudo apt-mirror
